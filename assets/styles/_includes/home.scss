@@ -1,0 +1,196 @@
+body {
+  background-color: #f0e6dcff;
+  min-height: 100vh;
+  position: relative;
+}
+
+.ma-home {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.ma-image {
+  width: 75%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: $box-shadow;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.ma-blabla {
+  background-color: black;
+  height: 88px;
+  width: 88px;
+}
+
+.ma-titre-home {
+  color: #f0e6dcff;
+  font-family: Bangers;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  left: 44%;
+  position: absolute;
+  top: 248px;
+  width: 50%;
+  z-index: 3;
+}
+
+.ma-home-ninja {
+  color: #f0e6dcff;
+  left: 52%;
+  position: absolute;
+  top: 640px;
+  z-index: 3;
+}
+
+.ma-home-register {
+  color: #f0e6dcff;
+  left: 39%;
+  position: absolute;
+  top: 640px;
+  z-index: 3;
+}
+
+.ma-home-logout {
+  color: #f0e6dcff;
+  left: 44%;
+  position: absolute;
+  top: 640px;
+  z-index: 3;
+}
+
+.ma-home-logout,
+.ma-home-register,
+.ma-home-ninja {
+  font-size: 1rem;
+}
+
+//ok ceci fonctionne !?
+@media screen and (max-width: 480px) {
+  .ma-titre-home {
+    color: #f0e6dcff;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    left: 42%;
+    position: absolute;
+    top: 170px;
+    width: 50%;
+    z-index: 3;
+  }
+
+  .ma-home-ninja {
+    color: #f0e6dcff;
+    position: absolute;
+    z-index: 3;
+    left: 29%;
+    top: 362px;
+  }
+
+  .ma-home {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .ma-image {
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .ma-home-register {
+    color: #f0e6dcff;
+    left: 51%;
+    position: absolute;
+    top: 362px;
+    z-index: 3;
+  }
+
+  .ma-home-logout {
+    color: #f0e6dcff;
+    left: 44%;
+    position: absolute;
+    top: 640px;
+    z-index: 3;
+  }
+  
+  .ma-home-logout,
+  .ma-home-register,
+  .ma-home-ninja {
+    font-size: 0.5rem;
+  }
+}
+
+// @media screen and (min-width: 481px) and (max-width: 768px) {
+//   .ma-titre-home {
+//     color: #f0e6dcff;
+//     font-size: 1rem;
+//     font-weight: bolder;
+//     left: 40%;
+//     position: absolute;
+//     top: 148px;
+//     width: 50%;
+//     z-index: 3;
+//   }
+
+//   .ma-home-ninja {
+//     color: #f0e6dcff;
+//     position: absolute;
+//     z-index: 3;
+//     left: 46%;
+//     top: 300px;
+//   }
+
+//   .ma-home {
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 8px;
+//   }
+
+//   .ma-image {
+//     height: 100%;
+//     max-width: 100%;
+//     max-height: 100%;
+//     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+//     border-radius: 8px;
+//     z-index: 1;
+//   }
+// }
+
+@media screen and (min-width: 1920px) {
+  .ma-titre-home {
+    color: #f0e6dcff;
+    font-size: 3rem;
+    font-weight: bolder;
+    left: 44%;
+    position: absolute;
+    top: 320px;
+    width: 50%;
+    z-index: 3;
+  }
+
+  .ma-home-ninja {
+    color: #f0e6dcff;
+    position: absolute;
+    z-index: 3;
+    left: 46%;
+    top: 300px;
+  }
+
+.ma-home-register {
+  font-size: 0.8rem;
+  left: 36%;
+}
+}

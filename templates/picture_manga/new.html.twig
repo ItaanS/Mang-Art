@@ -1,0 +1,18 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Ajouter un Concetp{% endblock %}
+
+{% block body %}
+
+<div class="ma-form row g-3 col-5">
+    <h2 class="be-h2">Ajouter un Concetp</h2>
+    <div class="col-12">
+        {{ form_start(form) }}
+    </div>
+    <div class="col-12">
+        {{ form_widget(form) }}
+    </div>
+    <button class="ma-submit" type="submit">Ajouter un Mang'Art</button>
+    {{ form_end(form) }}
+</div>
+{% endblock %}

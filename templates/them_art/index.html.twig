@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+  <title>Mang'Art thèmes</title>
+  <!-- Ajoutez d'autres balises de lien vers des fichiers CSS spécifiques à cette page si nécessaire -->
+</head>
+
+<body class="bodyTest">
+  <main class="testPageTheme">
+    <ul class="slider">
+      {# Ceci est l'item N°3 affiché dans ma page lorsque j'appuie sur la flèche suivant, mais utilise l'image du li
+      précédent, c'est a dire celui qui est tout en bas dans ce ul. (à trouver pourquoi???) #}
+      <li class="item" style="background-image: url('{{ asset('build/images/drStrangeContrast.png') }}');">
+        <div class="content">
+          <h2 class="title">StreetWear Concept Naruto</h2>
+          <p class="descriptionTheme">Ici le thème propose des Mang'Arts sous le thème du StreetWear, vous retrouverez
+            des personnages d'animes dans un style urbain !!</p>
+          <a href="{{ path('_Concept', {'theme': 1}) }}">
+            <button>Visiter le thème</button>
+          </a>
+        </div>
+      </li>
+      {# Ceci est l'item N°1 affiché dans ma page mais utilise l'image du li précédent. (à trouver pourquoi???) #}
+      <li class="item" style="background-image: url('{{ asset('build/images/cyberOmbrelle.png') }}');">
+        <div class="content">
+          <h2 class="title">Contrast Concept Itachi ok!!</h2>
+          <p class="descriptionTheme">Dans ce thème, vous découvrirez des images au contraste élevé, ce qui permet de
+            faire ressortir les couleurs présentes !!</p>
+          <a href="{{ path('_Concept', {'theme': 2}) }}">
+            <button>Visiter le thème</button>
+          </a>
+        </div>
+      </li>
+      {# Ceci est l'item N°2 affiché dans ma page lorsque j'appuie sur la flèche suivant, mais utilise l'image du li
+      précédent. (à trouver pourquoi???) #}
+      <li class="item" style="background-image: url('{{ asset('build/images/yuyuHakusho.png') }}');">
+        <div class="content">
+          <h2 class="title">Cyber Concept Sasuke</h2>
+          <p class="descriptionTheme">Le troisième thème vous propose un voyage dans un univers plus futuriste !!</p>
+          <a href="{{ path('_Concept', {'theme': 3}) }}">
+            <button>Visiter le thème</button>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <!-- cette partie doit rester commentée ! -->
+    <nav class="nav">
+      <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+      <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+    </nav>
+  </main>
+
+  <!-- Ajoutez d'autres balises de script si nécessaire -->
+  {#
+  <script src="{{ asset('build/main.js') }}"></script> #}
+  <script src="{{ asset('build/app.js') }}"></script>
+  <script>
+    // const slider = document.querySelector('.slider');
+
+    // function activate(e) {
+    //   const items = document.querySelectorAll('.item');
+    //   e.target.matches('.next') && slider.append(items[0])
+    //   e.target.matches('.prev') && slider.prepend(items[items.length - 1]);
+    // }
+
+    // document.addEventListener('click', activate, false);
+    const slider = document.querySelector('.slider');
+
+    function activate(e) {
+      const items = document.querySelectorAll('.item');
+
+      if (e.target.matches('.next')) {
+        slider.appendChild(items[0]);
+      } else if (e.target.matches('.prev')) {
+        slider.insertBefore(items[items.length - 1], items[0]);
+      }
+    }
+
+    document.addEventListener('click', activate, false);
+
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script type="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

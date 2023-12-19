@@ -1,0 +1,36 @@
+body {
+  background-color: #f0e6dcff;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.ma-h2 {
+  color: black;
+}
+
+// h2 {
+//   color: rgb(172, 9, 9);
+// }
+
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap";
+
+@import "_includes/navBar.scss";
+@import "_includes/home.scss";
+@import "_includes/pictures.scss";
+@import "_includes/form.scss";
+@import "_includes/foofter.scss";
+@import "_includes/theme.scss";
+@import "_includes/dashbord.scss";
+@import "_includes/error404.scss";
+@import "_includes/image.scss";
+@import "_includes/testTheme.scss";
+
+
+
+
+//font-google
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");

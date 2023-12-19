@@ -1,0 +1,100 @@
+.ma-container-theme {
+  width: 80%;
+}
+
+.ma-theme {
+  // width: 80%;
+  height: 28vh;
+  background-color: grey;
+  border-radius: 8px;
+  box-shadow: -4px 4px 14px #171a1f;
+  margin-bottom: 2.75rem;
+}
+
+.ma-titre-theme {
+  color: #8f6c53ff;
+  font-family: Bangers;
+}
+
+.ma-img-theme {
+  border-radius: 8px;
+  width: 100%;
+  // height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: 0 -1.75rem;
+}
+
+.ma-img-theme-1 {
+  border-radius: 8px;
+  width: 100%;
+  // height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: 0 -20rem;
+}
+
+.ma-img-theme-2 {
+  border-radius: 8px;
+  width: 100%;
+  // height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: 0 -12rem;
+}
+
+.ma-mangArt-show {
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+
+.ma-cadre-img {
+  height: 22rem;
+}
+
+.ma-h2 {
+  font-family: Bangers;
+  color: #8f6c53ff;
+}
+// .ma-cadre-img {
+//   --card-height: 200px;
+//   --card-width: calc(var(--card-height) / 1.5);
+// }
+
+.ma-btn-return {
+  background: #8f6c53ff;
+  border-radius: 8px;
+  color: #f0e6dcff;
+  font-family: Bangers;
+  height: 3rem;
+  bottom: 0;
+  left: 0;
+  // margin-bottom: 1rem;
+  // margin-left: 4rem;
+  // margin-top: 1rem;
+  // text-align: center;
+  // width: 80%;
+}
+
+.ma-theme-1 {
+  // display: inline-block;
+  // vertical-align: top;
+  color: #8f6c53ff;
+  font-family: Bangers;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .ma-img-theme {
+    // max-width: 100%;
+    // max-height: 100%;
+    // object-fit: cover;
+    object-position: 0 -6rem;
+    border-radius: 0;
+  }
+}
+

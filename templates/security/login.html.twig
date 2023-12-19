@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+<div class="ma-tout">
+    <div class="ma-card-login-image">
+        <img class="ma-login-image" src="{{ asset('build/images/login.png') }}" alt="">
+        <div class="ma-voile-card"></div>
+        <h1 class="ma-titre-login">De retour,</h1>
+        <p class="ma-text-img-login">Connecte toi pour revoir tes meilleurs concepts arts sur les animes. </p>
+    </div>
+    <div class="ma-card-login">
+        <h2 class="ma-titre">Connexion</h2>
+        {# {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+        {% endfor %} #}
+        <div class="ma-formulaire">
+            <form method="post">
+                {% if error %}
+                <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+
+                {% if app.user %}
+                <div class="mb-3">
+                    Vous êtes connecté(e) comme {{ app.user.tag }}, <a href="{{ path('app_logout') }}">Me
+                        déconnecter</a>
+                </div>
+                {% endif %}
+
+                <label for="inputEmail" class="required">Email</label>
+                <input type="email" value="{{ email }}" name="email" id="inputEmail" class="form-control"
+                    autocomplete="email" required autofocus>
+                <label for="inputPassword" class="required">Mot de passe</label>
+                <input type="password" name="password" id="inputPassword" class="form-control"
+                    autocomplete="current-password" required>
+
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                <button class="ma-btn" type="submit">
+                    Me connecter
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

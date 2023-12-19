@@ -1,0 +1,301 @@
+// CSS for register
+.ma-tout {
+  display: flex;
+  flex-direction: row;
+}
+
+.ma-form {
+  background: #8f6c53ff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 6.25px 14px #c9cbcf, 0px 0px 2px #c9cbcf;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 5rem auto;
+  width: 100%;
+}
+
+.ma-titre {
+  color: #8f6c53ff;
+  font-family: Bangers;
+  position: absolute;
+  top: 122px;
+}
+
+.ma-form h2 {
+  text-align: center;
+}
+
+.ma-submit {
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  width: 70%;
+}
+
+.required {
+  color: rgb(11, 9, 6);
+  margin-bottom: 0.25rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+
+label {
+  color: #8f6c53ff;
+  margin-right: 1rem;
+}
+
+input {
+  color: rgb(20, 14, 9);
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.test-ma {
+  color: black;
+}
+
+.ma-card-incription {
+  background: #f0e6dcff;
+  border-radius: 0px 8px 8px 0px;
+  border-style: none;
+  box-shadow: -4px 4px 14px #171a1f;
+  height: auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ma-formulaire {
+  width: 100%;
+}
+
+.ma-card-inscription-image {
+  height: 33.75rem;
+  position: relative;
+  width: 75%;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: -4px 4px 14px #171a1f;
+}
+
+.ma-voile-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px 0px 0px 8px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  // z-index: 1;
+}
+
+.ma-titre-incription {
+  font-size: 2.75rem;
+  font-weight: bold;
+  left: 51%;
+  max-width: 100%;
+  padding: 10px;
+  // position: absolute;
+  top: -51%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.ma-text-img {
+  font-size: 1.5rem;
+  font-family: Bangers;
+  left: 35%;
+  max-width: 68%;
+  padding: 10px;
+  // position: absolute;
+  top: -36%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.ma-incription-image {
+  border-radius: 8px 0px 0px 8px;
+  height: 100%;
+  object-fit: cover;
+  // object-position: 0 -9.75rem;
+  width: 100%;
+}
+
+.ma-titre-incription,
+.ma-text-img {
+  color: #f0e6dcff;
+  position: relative;
+  font-family: Bangers;
+  // z-index: 2;
+}
+
+.ma-btn {
+  background: #8f6c53ff;
+  border-radius: 8px;
+  color: #f0e6dcff;
+  font-family: Bangers;
+  height: 3rem;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.form-control {
+  margin-left: 4rem;
+  width: 80%;
+}
+
+// CSS for login
+.ma-card-login-image {
+  height: 33.75rem;
+  position: relative;
+  width: 75%;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: -4px 4px 14px #171a1f;
+}
+
+.ma-login-image {
+  border-radius: 8px 0px 0px 8px;
+  height: 100%;
+  object-fit: cover;
+  // object-position: 0 -9.75rem;
+  width: 100%;
+}
+
+.ma-titre-login {
+  font-size: 2.75rem;
+  font-family: Bangers;
+  font-weight: bold;
+  left: 51%;
+  max-width: 100%;
+  padding: 10px;
+  // position: absolute;
+  top: -42%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.ma-text-img-login {
+  color: #f0e6dcff;
+  font-family: Bangers;
+  font-size: 1.5em;
+  left: 35%;
+  margin-right: 255px;
+  max-width: 68%;
+  padding: 10px;
+  position: relative;
+  top: -30%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.ma-card-login {
+  background: #f0e6dcff;
+  border-radius: 0px 8px 8px 0px;
+  border-style: none;
+  box-shadow: -4px 4px 14px #171a1f;
+  height: auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ma-titre-login,
+.ma-text-img-login {
+  color: #f0e6dcff;
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .ma-tout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // CSS for login
+.ma-card-login-image {
+  height: 33.75rem;
+  position: relative;
+  width: 75%;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: -4px 4px 14px #171a1f;
+}
+
+.ma-login-image {
+  border-radius: 8px 0px 0px 8px;
+  height: 100%;
+  object-fit: cover;
+  // object-position: 0 -9.75rem;
+  width: 100%;
+}
+
+.ma-titre-login {
+  font-size: 2.75rem;
+  font-family: Bangers;
+  font-weight: bold;
+  left: 51%;
+  max-width: 100%;
+  padding: 10px;
+  // position: absolute;
+  top: -42%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.ma-text-img-login {
+  color: #f0e6dcff;
+  font-family: Bangers;
+  font-size: 1.5em;
+  left: 35%;
+  margin-right: 255px;
+  max-width: 68%;
+  padding: 10px;
+  position: relative;
+  top: -30%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.ma-card-login {
+  background: #f0e6dcff;
+  border-radius: 0px 8px 8px 0px;
+  border-style: none;
+  box-shadow: -4px 4px 14px #171a1f;
+  height: auto;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ma-titre-login,
+.ma-text-img-login {
+  color: #f0e6dcff;
+  position: relative;
+}
+
+  // .ma-card-inscription-image {
+  //   width: 100%;
+  //   border-radius: 0px 0px 8px 8px;
+  //   box-shadow: none;
+  // }
+
+  // .ma-card-incription,
+  // .ma-formulaire {
+  //   width: 100%;
+  // }
+
+  // .ma-titre-incription {
+  //   font-size: 1.5rem;
+  //   top: 10px;
+  // }
+
+  // .ma-text-img {
+  //   font-size: 1rem;
+  //   top: 0px;
+  // }
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenu chez Mang'Art{% endblock %}
+
+{% block body %}
+{# Ajouter bouton Connexion et Inscription #}
+<div class="ma-home">
+    <img class="ma-image" src="{{ asset('build/images/noctaAcceuilleCopie.png') }}" alt="">
+    <h2 class="ma-titre-home">Mang'Art</h2>
+    {% if app.user %}
+    <a href="/logout/" class="ma-logs">
+        <i class="fa-solid fa-right-from-bracket fa-fade fa-xl ma-home-logout"> Déconnexion</i>
+    </a>
+    {% else %}
+    <a href="/register/" class="ma-logs">
+        <i class="fa-solid fa-user fa-fade fa-sm ma-home-register"> Inscription</i>
+    </a>
+    <a href="/login/" class="ma-logs">
+        <i class="fa-solid fa-user-ninja fa-fade fa-sm ma-home-ninja"> Connexion</i>
+    </a>
+    {% endif %}
+</div>
+
+{% endblock %}

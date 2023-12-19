@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}mMang'Art Thèmes{% endblock %}
+
+{% block body %}
+
+<main class="testPageTheme">
+  <ul class="slider">
+    <li class="item" style="background-image: url" {{ asset('build/images/yuyuHakusho.png')}}";">
+      <div class="content">
+        <h2 class="title">Streetwear Concept</h2>
+        <p class="descriptionTheme">Ici le thème Propose des Mang'Arts sous le thème du streetWear, vus retrouverez des
+          personnages d'animes dans un style urbain !!</p>
+        <a href="{{ path('_Concept', {'theme': 1}) }}">
+          <button>Visiter le thème</button>
+        </a>
+      </div>
+    </li>
+    <li class="item" style="background-image: url" {{ asset('build/images/streetFighterContrast.png') }}";">
+      <div class="content">
+        <h2 class="title">Contrast Concept</h2>
+        <p class="descriptionTheme">Dans ce thème vous découvrirez des images au contrast élevée ce qui permet de faire
+          resortir les couleurs présentes !!</p>
+        <a href="{{ path('_Concept', {'theme': 2}) }}">
+          <button>Visiter le thème</button>
+        </a>
+      </div>
+    </li>
+    <li class="item" style="background-image: url" {{ asset('build/image/cyberOmbrelle.png') }}";">
+      <div class="content">
+        <h2 class="title">Cyber Concept</h2>
+        <p class="descriptionTheme">Le troisième thème vous propose un voyage dans une univers plus futuriste !!</p>
+        <a href="{{ path('_Concept', {'theme': 3}) }}">
+          <button>Visiter le thème</button>
+        </a>
+      </div>
+    </li>
+  </ul>
+  {# cette partie doit rester comenté ! #}
+  {# <nav class="nav">
+    <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+    <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+  </nav> #}
+</main>
+
+{# celle-ci aussi ! #}
+{#
+<script type="module" src="https://unpkg.com"></script> #}
+<script src="main.js"></script>
+{% endblock %}
+
+# Liste des thèmes et leurs redirections #}
+{# <div class="ma-container-theme">
+
+  <h2 class="ma-titre-theme">Streetwear Concept</h2>
+  <div class="ma-theme">
+    <a href="{{ path('_Concept', {'theme': 1}) }}">
+      <img class="ma-img-theme" src="{{ asset('build/images/yuyuHakusho.png') }}" alt="">
+    </a> #}
+    {# <p class="ma-theme-1">Dans ce thèmpe vous allez pouvoir visiter un univers ou les personnages de mangas sont
+      stylisés par un stryle
+      vestimentaire plutot urbain.</p> #}
+    {#
+  </div>
+  <h2 class="ma-titre-theme">Contrast Concept</h2>
+  <div class="ma-theme">
+    <a href="{{ path('_Concept', {'theme': 2}) }}">
+      <img class="ma-img-theme-1" src="{{ asset('build/images/streetFighterContrast.png') }}" alt="">
+    </a>
+  </div>
+  <h2 class="ma-titre-theme">Cyber Concept</h2>
+  <div class="ma-theme">
+    <a href="{{ path('_Concept', {'theme': 3}) }}">
+      <img class="ma-img-theme-2" src="{{ asset('build/images/cyberOmbrelle.png') }}" alt="">
+    </a>
+  </div>
+
+</div> #}

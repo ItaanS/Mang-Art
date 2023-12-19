@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ike Mina{% endblock %}
+
+{% block body %}
+<ul>
+
+    {% for mangArt in mangArts %}
+    <div class="ma-blabla"></div>
+    <li>
+        {{dump(mangArt)}}
+        <img src="/upload/images/{{mangArt.imageFile}}" alt="">
+    </li>
+    {% endfor %}
+
+</ul>
+{% for themArt in themArts %}
+    {% for mangArt in themArt.mangArts %}
+    <img src="/upload/images/{{mangArt.imageFile}}" alt="">
+
+    {% endfor %}
+{% endfor %}
+    {{ dump() }}
+
+{% endblock %}
+

@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ImageController!{% endblock %}
+
+{% block body %}
+
+<img src="{{ mangArt.path }}" alt="{{ mangArt.description }}">
+<p>{{ mangArt.description }}</p>
+
+{% endblock %}

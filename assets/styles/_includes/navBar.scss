@@ -1,0 +1,54 @@
+.ma-navBar {
+  color: #8F6C53FF;
+  background: #8F6C53FF;
+  font-family: Bangers;
+  height: 8vh;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ma-titreNav {
+  color: #f0e6dc;
+}
+
+.dropdown-item {
+  font-family: Bangers;
+}
+.ma-logs {
+  color: #f0e6dcff;
+  font-family: Bangers;
+  margin-right: 1rem;
+}
+
+.ma-icon-logs {
+  margin-left: 0.5rem;
+}
+
+.ma-tag {
+  color: #f0e6dcff;
+  font-family: Bangers;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+// @media screen and (max-width: 750px) {
+//   .ma-navBar {
+//     display: none;
+//   }
+// }
+.ma-dropdown {
+  border-color: #8F6C53FF;
+  border-width: 2px 0.50em;
+  background: #f0e6dc;
+}
+
+.ma-dropdown-items {
+  color: #8F6C53FF;
+}
+
+@media (hover: hover) {
+  .ma-hover:hover {
+    background: #8F6C53FF;
+    color: #f0e6dc;
+  }
+}

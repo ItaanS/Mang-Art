@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Incription{% endblock %}
+
+{% block body %}
+
+    <div class="ma-card-inscription-image">
+        <img class="ma-incription-image" src="{{ asset('build/images/login.png') }}" alt="">
+        <div class="ma-voile-card"></div>
+        <h1 class="ma-titre-incription">Première visite</h1>
+        <p class="ma-text-img">Que sommes nous?! Mang'art est une galerie d'image sur le thème du manga, mais pas ce que
+            tu à l'habitude de
+            voir, ici on vous présente des concepts visuels. </p>
+    </div>
+
+    <div class="ma-card-incription">
+    
+        <h1 class="ma-titre">Inscription</h1>
+        <div class="ma-formulaire">
+            {{ form_errors(registrationForm) }}
+            {{ form_start(registrationForm) }}
+            {{ form_row(registrationForm.email) }}
+            {{ form_row(registrationForm.tag) }}
+            {{ form_row(registrationForm.plainPassword, {
+            label: 'Créer Mot de passe'
+            }) }}
+            {{ form_row(registrationForm.agreeTerms) }}
+            <button type="submit" class="ma-btn">M'enrengistrer</button>
+            {{ form_end(registrationForm) }}
+        </div>
+    </div>
+
+{% endblock %}
+
+{# pour ajouter une class à mon champ formulaire symfony #}
+{# {'attr': {'class': 'ma-imput'}} #}
